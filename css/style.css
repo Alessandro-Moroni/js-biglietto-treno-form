@@ -1,3 +1,23 @@
 .debug{
   border: 1px solid black;
 }
+body{
+  background-color: rgb(154, 51, 35);
+}
+.back{
+  background-color: rgb(232, 141, 37);
+  border-radius: 20px;
+}
+.back-ticket{
+  background-color: rgb(232, 161, 79);
+  border-radius: 20px;
+}
+
+.user{
+  background-color: rgb(232, 141, 37);
+  border-radius: 0 20px 20px 0;
+  padding: 10px;
+}
+.ticket-container div p{
+  color: white;
+}
