@@ -22,16 +22,16 @@
         
         <div class="col">
           <div class="mb-1">Inserisci i chilometri</div>
-          <input type="text">
+          <input type="text" id="km">
         </div>
 
         <div class="col">
           <div>Inserisci l'età</div>
-          <select class="form-select" aria-label="Default select example">
+          <select class="form-select select-age" aria-label="Default select example">
             <option selected>Seleziona l'età</option>
-            <option value="1">-18 anni</option>
-            <option value="2">+18 anni</option>
-            <option value="3">+65 anni</option>
+            <option value="under">-18 anni</option>
+            <option value="standart">+18 anni</option>
+            <option value="over">+65 anni</option>
           </select>
 
         </div>
@@ -44,7 +44,7 @@
     </div>
 
     
-    <div class="container-fluid text-center py-3  debug">
+    <div class="container-fluid text-center py-3 ticket-container debug d-none">
       <h2 class="mb-3 ">IL TUO BIGLIETTO</h2>
       
       <div class="row">
@@ -54,8 +54,13 @@
         </div>
 
         <div class="col">
-          Offerta
-          <p>offerta</p>
+          Chilometri
+          <p id="km-tot"></p>
+        </div>
+
+        <div class="col">
+          Tariffa
+          <p id="sale"></p>
         </div>
 
         <div class="col">
