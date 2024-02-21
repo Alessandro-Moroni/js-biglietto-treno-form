@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcolo del prezzo del biglietto del treno</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+  <div class="container my-3">
+
+    <div class="container-fluid debug text-center mb-5 py-3">
+      <h2 class="pb-2">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+
+      <div class="row">
+        <div class="col">
+          <div class="mb-1 ">Inserisci nome e cognome</div>
+          <input type="text" id="textName">
+        </div>
+        
+        <div class="col">
+          <div class="mb-1">Inserisci i chilometri</div>
+          <input type="text">
+        </div>
+
+        <div class="col">
+          <div>Inserisci l'età</div>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Seleziona l'età</option>
+            <option value="1">-18 anni</option>
+            <option value="2">+18 anni</option>
+            <option value="3">+65 anni</option>
+          </select>
+
+        </div>
+      </div>
+
+      <div class="container-fluid debug mt-5">
+        <button type="button" class="btn btn-danger mx-3 bt1">Genera</button>
+        <button type="button" class="btn btn-danger mx-3 bt2">Annulla</button>
+      </div>
+    </div>
+
+    
+    <div class="container-fluid text-center py-3  debug">
+      <h2 class="mb-3 ">IL TUO BIGLIETTO</h2>
+      
+      <div class="row">
+        <div class="col-5 debug">
+          NOME PASSEGGERO
+          <p id="name"></p>
+        </div>
+
+        <div class="col">
+          Offerta
+          <p>offerta</p>
+        </div>
+
+        <div class="col">
+          Costo biglietto
+          <p>costo</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
